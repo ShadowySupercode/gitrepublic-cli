@@ -12,11 +12,8 @@ python3 -m venv venv
 . venv/bin/activate
 echo The virtual environment is here: $VIRTUAL_ENV
 
-# To get the latest package lists
-apt-get update
-
-# install the required typer library
-pip install "typer[all]"
+# install the required libraries
+pip install -r requirements.txt
 
 # test the installation
 python3 src/main.py
